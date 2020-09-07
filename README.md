@@ -186,7 +186,7 @@ const Greeting = ({ greeting }) => <h1>{greeting}</h1>;
 export default App;
 ```
 
-In this case, the code uses a ternary operator to either show the greeting or not. You can read up [this tutorial about all the conditional renderings in React](/conditional-rendering-react/). The state makes the React components interactive. You can **read and write state**, whereas **props are read-only**. Once the state changes, the component renders again. In addition, state can be passed as props to child components too.
+In this case, the code uses a ternary operator to either show the greeting or not. The state makes the React components interactive. You can **read and write state**, whereas **props are read-only**. Once the state changes, the component renders again. In addition, state can be passed as props to child components too.
 
 ```js
 import React, { Component } from 'react';
@@ -682,7 +682,7 @@ const BiographyItalic = ({ user }) => (
 );
 ```
 
-Many people refer to this as **slot pattern** in React. You can find a working minimal project on [GitHub](https://github.com/the-road-to-learn-react/react-slot-pattern-example). And again, that's how composition in React shines. You don't need to touch the Profile component. Moreover, you don't need to pass props, in this case the user, multiple levels down the component tree, but rather pass it to the slotted components.
+Many people refer to this as **slot pattern** in React. And again, that's how composition in React shines. You don't need to touch the Profile component. Moreover, you don't need to pass props, in this case the user, multiple levels down the component tree, but rather pass it to the slotted components.
 
 # Children as a Function
 
